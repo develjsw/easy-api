@@ -18,4 +18,7 @@ Route::group([
         ->name('testApi.createUser');
     Route::patch('{id}', [TestController::class, 'updateUser'])
         ->name('testApi.updateUser');
+
+    Route::get('connection/database', [TestController::class, 'dbConnectionStatus'])
+        ->name('testApi.dbConnectionStatus');
 });

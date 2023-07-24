@@ -18,9 +18,9 @@ return new class extends Migration
             $table->string('member_nm')->nullable();
             $table->string('address')->nullable();
             $table->string('email')->nullable();
-            $table->timestamp('reg_date');
-            $table->timestamp('mod_date');
-            $table->timestamp('del_date');
+            $table->timestamp('reg_date')->nullable();
+            $table->timestamp('mod_date')->nullable();
+            $table->timestamp('del_date')->nullable();
         });
     }
 
